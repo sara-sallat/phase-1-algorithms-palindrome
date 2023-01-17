@@ -1,5 +1,19 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  let letterOfWords = word.split('') // ['k','u','d']
+  let letterOfWordsReversed = [...letterOfWords].reverse() // ['d','u','k']
+
+let isItPalindrome = false;
+
+  for(let i = 0; i < letterOfWords.length; i++){
+    if(letterOfWords[i] === letterOfWordsReversed[i]){
+      isItPalindrome = true
+    }
+    else return false;
+    
+  }
+  return isItPalindrome
 }
 
 /* 
